@@ -1,0 +1,143 @@
+.wrapper{
+  display: flex;
+}
+
+.side_bar{
+height: 100vh;
+width: 300px;
+background-color: #253141;
+
+}
+
+.side_header{
+height: 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+.user_name{ 
+  font-size: 16px;
+  color: #fafafa;
+  background-color: #253141;
+  
+}
+
+.new_room a{
+  font-size: 10px;
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  text-decoration: none;
+  padding: 14px;
+}
+
+.side_body{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 0 20px;
+}
+
+.room_name{
+  color: white;
+  list-style: none;
+  padding: 20px 0px 40px;
+}
+.main_chat{
+height: 100vh;
+width: calc(100% - 300px);
+background-color: #ffffff;
+}
+
+.main_header{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room_title{
+  font-size: 24px;
+  color: #333333;
+  /* margin-top: 36px; */
+}
+
+.end_chat a {
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+  text-decoration: none;
+}
+
+
+
+.main_body{
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+.main_upper{
+  display: flex;
+}
+.name{
+  padding: 10px 0;
+  font-size: 16px;
+  color: #434a54;
+}
+
+.date{
+  padding: 10px 0 0 10px;
+  font-size: 12px;
+  color: #999999;
+}
+
+.comment{
+  font-size: 14px;
+  color: #434a54;
+  padding-bottom: 40px;
+}
+
+.form{
+  height: 90px;
+  background-color: #dddddd;
+  padding: 20px 40px;
+  display:flex;
+}
+.form-input {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
