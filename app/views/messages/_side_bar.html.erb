@@ -7,9 +7,9 @@
   </div>
 </div>
 <div class="side_body">
-  <ul class="room_catalog">
-    <li class="room_name">room1</li>
-    <li class="room_name">room2</li>
-    <li class="room_name">room3</li>
-  </ul>
+  <%current_user.rooms.each do|room|%>
+    <div class="room_name">
+      <a href="#"><%=room.name%></a>
+    </div>
+  <%end%>
 </div>
