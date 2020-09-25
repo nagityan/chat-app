@@ -5,20 +5,7 @@
   </div>
 </div>
 <div class="main_body">
-  <div class="main_upper">
-    <div class="name">Taro</div>
-    <div class="date">2020/10/10</div>
-  </div>
-  <div class="mian_under">
-    <div class="comment">おはよう</div>
-  </div>
-  <div class="main_upper">
-    <div class="name">Taro</div>
-    <div class="date">2020/10/10</div>
-  </div>
-  <div class="mian_under">
-    <div class="comment">おはよう</div>
-  </div>
+  <%= render partial:'message',collection: @messages %>
 </div>
 
 <%=form_with model: [@room, @message],html: {class: "form"}, local: true do |f| %>
