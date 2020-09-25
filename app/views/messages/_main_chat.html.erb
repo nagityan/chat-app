@@ -1,7 +1,7 @@
 <div class="main_header">
   <div class="room_title"><%=@room.name%></div>
   <div class="end_chat">
-  <a href="#">チャット終了</a>
+    <%= link_to 'チャット終了', room_path(@room), method: :delete%>
   </div>
 </div>
 <div class="main_body">
