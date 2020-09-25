@@ -1,32 +1,23 @@
 <div class="main_header">
-  <div class="room_title">huhufhe</div>
+  <div class="room_title"><%=@room.name%></div>
   <div class="end_chat">
-  <a href="#">チャット終了</a>
+    <%= link_to 'チャット終了', room_path(@room), method: :delete%>
   </div>
 </div>
 <div class="main_body">
-  <div class="main_upper">
-    <div class="name">Taro</div>
-    <div class="date">2020/10/10</div>
-  </div>
-  <div class="mian_under">
-    <div class="comment">おはよう</div>
-  </div>
-  <div class="main_upper">
-    <div class="name">Taro</div>
-    <div class="date">2020/10/10</div>
-  </div>
-  <div class="mian_under">
-    <div class="comment">おはよう</div>
-  </div>
+  <%= render partial:'message',collection: @messages %>
 </div>
-<div class="form">
+
+<%=form_with model: [@room, @message],html: {class: "form"}, local: true do |f| %>
   <div class="form-input">
-    <input class="form-message" placeholder= "type a message">
+    <%=f.text_field :content, class: "form-message", placeholder: 'type a message' %>
     <label class="form-image">
-      <span class="image-file">画像</span>
-      <input type="file" class="hidden">
+      <span　class ="image-file">画像</span>
+      <%= f.file_field :image, class: 'hidden' %>
     </label>
   </div>
-  <input class="form-submit" type="submit" value="送信">
-</div>
+  <%=f.submit "送信", class: "form-submit"%>
+<%end%>
+
+
+  
